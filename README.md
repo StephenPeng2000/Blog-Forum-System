@@ -1,5 +1,117 @@
 # Blog-Forum-System
 
+A full-stack blog and forum platform featuring user registration, article posting, commenting, liking, bookmarking, social follows, and a real-time weather widget powered by WeatherAPI.com. Includes a public React site, an admin React dashboard, and a Spring Boot + MyBatis backend.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)  
+- [Features](#features)  
+- [Architecture](#architecture)  
+- [Technology Stack](#technology-stack)  
+- [Prerequisites](#prerequisites)  
+- [Setup](#setup)  
+  - [1. Clone the Repository](#1-clone-the-repository)  
+  - [2. Database Initialization](#2-database-initialization)  
+  - [3. Configure Backend](#3-configure-backend)  
+  - [4. Configure Frontends](#4-configure-frontends)  
+  - [5. Run Server](#5-run-server)  
+  - [6. Run Public Site](#6-run-public-site)  
+  - [7. Run Admin Dashboard](#7-run-admin-dashboard)  
+- [Directory Structure](#directory-structure)  
+- [License](#license)  
+
+---
+
+## Overview
+
+Blog-Forum-System is a **modern** full-stack application that lets users and administrators interact in a blogging/forum environment. The public site allows visitors to:
+
+- Sign up, log in, and manage profiles  
+- Create and edit markdown-based articles  
+- Comment with nested replies, like, bookmark, and follow authors  
+- See real-time weather information based on their location  
+
+Administrators use a dedicated React dashboard to moderate content, manage users, and view site analytics.
+
+---
+
+## Features
+
+- **User Authentication & Authorization**  
+  - Registration, login, JWT-based sessions, role-based access (user vs. admin).  
+
+- **Article & Forum Management**  
+  - Write, edit, delete, and view articles in Markdown.  
+  - Tag & category system for content organization.  
+  - Rich editor with image upload support.  
+
+- **Social Interactions**  
+  - Commenting with nested replies.  
+  - Like and bookmark (collect) articles.  
+  - Follow/unfollow authors to build a network.  
+
+- **Real-Time Weather Module**  
+  - Uses WeatherAPI.com’s `/current.json` endpoint.  
+  - On page load, obtains user geolocation (lat/lon) via browser API.  
+  - Displays temperature, condition, and icon in the header.  
+
+- **Admin Dashboard**  
+  - React dashboard for content moderation, user management, and basic reporting.  
+  - Search, filter, and paginate users, articles, comments.  
+
+- **Responsive & Themed UI**  
+  - use AntDesign components
+---
+
+## Architecture
+
+This repository contains three main modules:
+
+1. **Server** (`/server`)  
+   - Spring Boot 2.2.5 REST API running on port **8081** by default.  
+   - MyBatis for ORM; PageHelper for pagination.  
+   - Alibaba Druid connection pool; FastJSON for JSON serialization.  
+   - Redis for caching sessions and hot-data.  
+
+2. **Web** (`/web`)  
+   - Public React app (Create React App) on port **3000**.  
+   - Fetches from backend APIs; handles user auth, article views, interactions, and weather widget.  
+
+3. **Admin** (`/admin`)  
+   - React dashboard (Create React App) on port **3001**.  
+   - Uses the same APIs with elevated permissions for admin endpoints.
+
+---
+
+## Technology Stack
+
+- **Backend**  
+  - Java 8, Spring Boot, MyBatis, PageHelper, Druid, FastJSON, Redis, MySQL 8.0  
+
+- **Frontend**  
+  - React (Create React App), JavaScript (ES6+), SCSS  
+
+- **Weather Integration**  
+  - [WeatherAPI.com](https://www.weatherapi.com/) for real-time weather via `/current.json` (latitude/longitude)  
+
+- **Build & Dev Tools**  
+  - Maven, npm, Webpack, Babel  
+
+---
+
+## Prerequisites
+
+- **Java 8+** & **Maven**  
+- **Node.js 14+** & **npm**  
+- **MySQL 8.0+**  
+- **Redis 5+**  
+- **WeatherAPI Key** (sign up at [weatherapi.com](https://www.weatherapi.com/) for a free API key)  
+
+---
+
+
 ```mermaid
 erDiagram
 
