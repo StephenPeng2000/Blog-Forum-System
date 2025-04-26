@@ -11,16 +11,6 @@ A full-stack blog and forum platform featuring user registration, article postin
 - [Architecture](#architecture)  
 - [Technology Stack](#technology-stack)  
 - [Prerequisites](#prerequisites)  
-- [Setup](#setup)  
-  - [1. Clone the Repository](#1-clone-the-repository)  
-  - [2. Database Initialization](#2-database-initialization)  
-  - [3. Configure Backend](#3-configure-backend)  
-  - [4. Configure Frontends](#4-configure-frontends)  
-  - [5. Run Server](#5-run-server)  
-  - [6. Run Public Site](#6-run-public-site)  
-  - [7. Run Admin Dashboard](#7-run-admin-dashboard)  
-- [Directory Structure](#directory-structure)  
-- [License](#license)  
 
 ---
 
@@ -110,6 +100,18 @@ This repository contains three main modules:
 - **WeatherAPI Key** (sign up at [weatherapi.com](https://www.weatherapi.com/) for a free API key)  
 
 ---
+
+<img width="1624" alt="image" src="https://github.com/user-attachments/assets/bafaa21e-8ac6-4ca7-bfb9-55fe813c4215" />
+<img width="1591" alt="image" src="https://github.com/user-attachments/assets/a57f9fb6-bdd9-4356-9ee4-ed4912b7dea3" />
+<img width="1599" alt="image" src="https://github.com/user-attachments/assets/6a435be9-ccee-4ba0-b9fc-fa84472670c8" />
+<img width="1404" alt="image" src="https://github.com/user-attachments/assets/4ded4048-8909-4e20-8929-648e62831b25" />
+<img width="1626" alt="image" src="https://github.com/user-attachments/assets/ac9d87f8-df62-4af0-a152-5fe13aa82ab5" />
+<img width="1633" alt="image" src="https://github.com/user-attachments/assets/21ed516b-213b-4002-84b7-1111ee6daff1" />
+<img width="1636" alt="image" src="https://github.com/user-attachments/assets/28dc8a23-4db0-42cf-8e39-b75acfd33d00" />
+
+
+
+
 
 
 ```mermaid
