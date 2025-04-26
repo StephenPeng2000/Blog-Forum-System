@@ -1,0 +1,8 @@
+@import '~antd/dist/antd.css';
+.ant-table {
+    min-height: 400px !important;
+}
+
+.ant-empty-normal {
+    margin: 150px 0 !important;
+}

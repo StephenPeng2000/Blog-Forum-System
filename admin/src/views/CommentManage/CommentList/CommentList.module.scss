@@ -1,0 +1,21 @@
+:global {
+  .ant-modal-body {
+    max-height: calc(80vh - 150px);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #e3e3e6;
+      border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 5px;
+    }
+  }
+}
+

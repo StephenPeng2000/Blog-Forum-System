@@ -1,0 +1,35 @@
+.user_button {
+  .add {
+    margin: 0 5px;
+    background-color: #03cee0 !important;
+    border-color: #03cee0 !important;
+    color: #FFFFFF !important;
+  }
+  .edit {
+    margin: 0 5px;
+    background-color: #FFA500 !important;
+    border-color: #FFA500 !important;
+    color: #FFFFFF !important;
+  }
+}
+:global {
+  .ant-modal-body {
+    max-height: calc(80vh - 150px);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #e3e3e6;
+      border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 5px;
+    }
+  }
+}
+
